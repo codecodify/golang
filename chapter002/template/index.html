@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chapter002 模板循环数据</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Street</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $index, $value := . }}
+                <tr>
+                    <td>{{ $index|number }}</td>
+                    <td>{{ $value.Name }}</td>
+                    <td>{{ $value.Street}}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
