@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chapter003 表单提交</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    {{ if .status }}
+    <div class="alert alert-{{ .status }}" role="alert">
+        {{ .message }}
+    </div>
+    {{ end }}
+    <form action="/" method="post">
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名" required>
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="请输入密码" required>
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+    </form>
+</div>
+
+</body>
+</html>
