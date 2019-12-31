@@ -1,0 +1,2 @@
+<import src="list-template" />
+<template is="list-template" data="{{ movies, total, page }}"></template>

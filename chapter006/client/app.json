@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/douban/index",
+    "pages/douban/splash",
+    "pages/douban/item",
+    "pages/douban/list",
+    "pages/douban/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
